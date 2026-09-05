@@ -12,7 +12,8 @@ while true; do
     echo "2. Start System Stat website"
     echo "3. Update System && Upgrade"
     echo "4, Speedtest"
-    echo "5. Exit"
+    echo "5, Ram cache cleaner"
+    echo "6. Exit"
     echo "=============================="
     read -p "Enter your choice [1-4]: " choice
 
@@ -80,6 +81,7 @@ while true; do
             ;;
 
         5)
+            clear
             sync; echo 3 | sudo tee /proc/sys/vm/drop_caches && sudo swapoff -a && sudo swapon -a   
             ;;
 
