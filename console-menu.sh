@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+# Ensure IP address is captured cleanly
+IP_ADDRESS=$(hostname -I | awk '{print $1}')
 
 while true; do
     clear
