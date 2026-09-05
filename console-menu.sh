@@ -77,6 +77,12 @@ while true; do
             echo "Exiting menu..."
             exit 0
             ;;
+
+        5)
+            echo "Speedtest in progress..."
+            clear
+            speedtest-cli
+            ;;
         *)
             echo "Invalid option. Please try again."
             ;;
