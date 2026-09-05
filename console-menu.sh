@@ -74,12 +74,16 @@ while true; do
             echo "Updating system packages..."
             sudo apt update && sudo apt upgrade -y
             ;;
-        4)
+        6)
             echo "Exiting menu..."
             exit 0
             ;;
 
         5)
+            sync; echo 3 | sudo tee /proc/sys/vm/drop_caches && sudo swapoff -a && sudo swapon -a   
+            ;;
+
+        4)
             echo "Speedtest in progress..."
             clear
             speedtest-cli
