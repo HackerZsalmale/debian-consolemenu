@@ -11,7 +11,8 @@ while true; do
     echo "1. Run fastfetch"
     echo "2. Start System Stat website"
     echo "3. Update System && Upgrade"
-    echo "4. Exit"
+    echo "4, Speedtest"
+    echo "5. Exit"
     echo "=============================="
     read -p "Enter your choice [1-4]: " choice
 
