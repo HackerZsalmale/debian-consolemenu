@@ -15,7 +15,7 @@ while true; do
     echo "5, Ram cache cleaner"
     echo "6. Exit"
     echo "=============================="
-    read -p "Enter your choice [1-4]: " choice
+    read -p "Enter your choice [1-6]: " choice
 
     case $choice in
         1)
