@@ -88,6 +88,8 @@ while true; do
         4)
             echo "Speedtest in progress..."
             clear
+            apt install speedtest-cli
+            clear
             speedtest-cli
             ;;
         *)
